@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cierre de sesión</title>
+    <style>
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            padding-top: 50px;
+        }
+
+        header {
+            background-color: #4682b4;
+            color: white;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 2em;
+        }
+
+        p {
+            font-size: 1.2em;
+            color: #555;
+        }
+
+        .message {
+            background-color: #e0f7fa;
+            border: 1px solid #00acc1;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            margin: 20px auto;
+            width: 50%;
+        }
+
+        .redirect-message {
+            font-size: 1.1em;
+            margin-top: 20px;
+            color: #4682b4;
+        }
+
+        .redirect-message a {
+            text-decoration: none;
+            font-weight: bold;
+            color: #4682b4;
+        }
+
+        .redirect-message a:hover {
+            color: #5a9bd5;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Has cerrado sesión con éxito</h1>
+</header>
+
+<div class="message">
+    <p>¡Gracias por tu visita! Tu sesión ha sido cerrada correctamente.</p>
+    <p class="redirect-message">Serás redirigido al <a href="login.html">formulario de login</a> en pocos segundos...</p>
+</div>
+
+<script>
+    setTimeout(function() {
+        window.location.href = 'login.html';
+    }, 3000);
+</script>
+
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Usuario</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #4682b4;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h2 {
+            color: #4682b4;
+        }
+
+        .form-container {
+            width: 60%;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            font-size: 1.1em;
+            margin-bottom: 10px;
+            display: inline-block;
+        }
+
+        input[type="text"], input[type="email"], input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 1em;
+        }
+
+        button {
+            background-color: #4682b4;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1.1em;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #5a9bd5;
+        }
+
+        .image-container {
+            text-align: center;
+            margin: 30px 0;
+        }
+
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Bienvenido al Sistema de Registro</h1>
+</header>
+
+<div class="image-container">
+    <img src="imagen-de-bienvenida.jpg" alt="Bienvenida">
+</div>
+
+<div class="form-container">
+    <h2>Formulario de Registro</h2>
+    <form action="registro.php" method="POST">
+        <label for="nombre_usuario">Nombre de usuario:</label>
+        <input type="text" name="nombre_usuario" required placeholder="Escribe tu nombre de usuario"><br><br>
+
+        <label for="correo_electronico">Correo electrónico:</label>
+        <input type="email" name="correo_electronico" required placeholder="Escribe tu correo electrónico"><br><br>
+
+        <label for="contrasena">Contraseña:</label>
+        <input type="password" name="contrasena" required placeholder="Crea una contraseña"><br><br>
+
+        <button type="submit">Registrar</button>
+    </form>
+</div>
+
+</body>
+</html>
